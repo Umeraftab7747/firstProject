@@ -1,0 +1,155 @@
+.mainThirteen{
+    display: flex;
+    height: 100vh;
+    .header{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      position: absolute;
+      padding: 10px 0;
+      .admin{
+        h4{
+          color: white;
+          margin-left: 55px;
+        }
+      }
+      .dash{
+        h4{
+          color: #3CCF4E;
+          font-weight: bold;
+        }
+      }
+      .login{
+        display: flex;
+        .price{
+          color: #3CCF4E;
+        }
+        .login-btn{
+          color: #3CCF4E;
+          padding: 0 30px;
+        }
+      }
+    }
+    .right{
+      background-color: #3CCF4E;
+      width: 18%;
+      h4{
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+      }
+      .list{
+        ul{
+          list-style-type: none;
+          padding: 100px 30px;
+          // text-align: center;
+          li{
+            color: white;
+            font-size: 20px;
+            padding: 15px 0px;
+            .icon{
+              font-size: 28px;
+            }
+          }
+        }
+      }
+    }
+  
+    .left{
+      .left_content{
+        position: absolute;
+        top: 20%;
+        left: 20%;    
+        ul{
+            list-style-type: none;
+            li{
+                padding: 20px 0;
+                img{
+                    width: 30%;
+                    padding-right: 20px;
+                }
+            }
+        }
+      }
+    }
+  }
+
+  
+  .overlayThirteen{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;   
+  .modalContainer {
+    max-width: 1400px;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // display: flex;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 70px;
+    h2{
+        color: #3CCF4E;
+        text-align: center;
+    }
+    p{
+        font-weight: bold;
+        font-size: 20px;
+        span{
+            font-weight: normal;
+        }
+    }
+    a{
+        text-align: center;
+        background-color: red;
+        color: #ffffff;
+        border-radius: 50%;
+        font-size: 23px;
+        padding: 7px 10px;
+        transform: translate(-50%, -50%);
+        position: fixed;
+        left: 50%;
+        top: 90%;
+    }
+  }
+  .wallet{
+  // background-color: aqua;
+  h2{
+    text-align: center;
+    color: #3CCF4E;
+    font-size: 48px;
+  }
+  .wallet_head{
+    p{
+      font-weight: 700;
+      font-size: 22px;
+      span{
+        font-weight: 400;
+      }
+    }
+  }
+  .table{
+    padding-top: 4rem;
+    table{
+    width: 100%;
+    th{
+      padding: 30px 20px;
+    }
+    tr{
+      border: none;
+    }
+    td{
+      padding: 30px 20px;
+    }
+    tr:nth-child(odd) {
+      background-color: #D9D9D9;
+    }
+    }
+  }
+}
+}

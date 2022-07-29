@@ -1,0 +1,301 @@
+.mainFour{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 100vh;
+  @media screen and (max-width: 968px) {
+    grid-template-columns: 0fr 1fr;
+  }
+    .right{
+      z-index: 1000;
+      .navbar{
+        .nav-menu{
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 22vw;
+            height: 100vh;
+            justify-content: center;
+            background-color: #3CCF4E;
+            @media screen and (max-width: 968px) {
+              flex-direction: column;
+              position: absolute;
+              top: 0px;
+              left: 0;
+              visibility: hidden;
+              width: 30vw;
+              height: 100vh;
+              justify-content: center;
+            }
+            @media screen and (max-width: 870px) {
+              width: 35vw;
+            }
+            @media screen and (max-width: 700px) {
+              width: 42vw;
+            }
+            @media screen and (max-width: 600px) {
+              width: 45vw;
+            }
+            @media screen and (max-width: 550px) {
+              height: 124vh;
+            }
+            @media screen and (max-width: 500px) {
+              width: 55vw;
+            }
+            @media screen and (max-width: 420px) {
+              width: 75vw;
+            }
+            @media screen and (max-width: 550px) {
+              height: 100vh;
+            }
+            h4{
+              color: white;
+              position: absolute;
+              top: 1.5%;
+              left: 18%;
+            }
+            .nav-items{
+                padding: 10px 0;
+              a{
+                text-decoration: none;
+                color: white;
+                margin-right: 2rem;
+                font-size: 22px;
+                letter-spacing: 1.5px;
+                transition: .5s ease-in-out;
+                .icon{
+                  font-size: 26px;
+                } 
+                @media screen and (max-width: 460px) {
+                  font-size: 18px;
+                }
+                @media screen and (max-width: 405px) {
+                  font-size: 14px;
+                }
+              }
+            }
+            .login_side{
+              display: none;
+              @media screen and (max-width: 968px) {
+                display: block;
+                color: white;
+                position: absolute;
+                top: 90%;
+                display: flex;
+                gap: 1rem;
+                a{
+                  text-decoration: none;
+                  color: white;
+                }
+              }
+              @media screen and (max-width: 542px) {
+                .pri{
+                  font-size: 20px!important;
+                }
+                h5{
+                  font-size: 16px;
+                }
+              }
+            }
+        }
+        .nav-menu.active{
+          visibility: visible;
+          transition: .9s ease-in-out;
+        }
+        .icons{
+          display: none;
+          @media screen and (max-width: 968px) {
+            display: block;
+            color: #000;
+            font-size: 20px;
+            z-index: 10;
+            .bar{
+                position: fixed;
+                left: 5%;
+                top: 2%;
+                font-size: 22px;
+                color: #3CCF4E;
+            }
+            .time{
+                position: fixed;
+                left: 25%;
+                top: 2%;
+                color: white;
+                font-size: 22px;
+                // z-index: 10000;
+                @media screen and (max-width: 870px) {
+                  left: 30%;
+                }
+                @media screen and (max-width: 700px) {
+                  left: 35%;
+                }
+                @media screen and (max-width: 600px) {
+                  left: 39%;
+                }
+                @media screen and (max-width: 500px) {
+                  left: 47%;
+                }
+                @media screen and (max-width: 420px) {
+                  left: 63%;
+                }
+            }
+          }
+        }
+      }
+      
+    }
+    .left{
+      .header{
+        display: flex;
+        justify-content: space-between;
+        .dash{
+          color: #3CCF4E;
+          font-weight: bold;
+          position: fixed;
+          top: 2%;
+          left: 48%;
+          z-index: 1;
+          @media screen and (max-width: 968px) {
+            left: 40%;
+          }
+          @media screen and (max-width: 400px) {
+            left: 34%;
+          }
+        }
+        .login{
+          display: flex;
+          gap: 1rem;
+          position: absolute;
+          top: 2%;
+          right: 3%;
+          a{
+            text-decoration: none;
+            color: #3CCF4E;
+            font-weight: 700;
+            font-size: 18px;
+          }
+          @media screen and (max-width: 968px) {
+            display: none;
+          }
+        }
+      }
+      .buttons{
+        position: absolute;
+        left: 27%;
+        top: 16%;
+        @media screen and (max-width: 968px) {
+          left: 9%;
+        }
+        .pend{
+          text-decoration: none;
+          background-color: #3CCF4E;
+          color: white;
+          font-weight: 600;
+          font-size: 16px;
+          padding: 10px 20px;
+          border-radius: 4px;
+        }
+        .del{
+          text-decoration: none;
+          font-weight: 600;
+          background-color: #ecf0f1;
+          color: #000;
+          font-size: 16px;
+          padding: 10px 20px;
+          border-radius: 4px;
+        }
+      }
+
+      .left_content{
+        position: absolute;
+        left: 27%;
+        top: 25%;
+        right: 8%;
+        @media screen and (max-width: 968px) {
+          left: 9%;
+          right: 11%;
+        }
+        .box_main{
+          background-color: #ecf0f1;
+          padding: 10px 40px 10px 20px;
+          border-radius: 6px;
+          @media screen and (max-width: 652px) {
+            padding: 10px 20px 10px 20px;
+          }
+          .box{
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: 652px) {
+              flex-direction: column;
+            }
+            .right_side{
+              h5{
+                font-weight: bold;
+              }
+              span{
+                font-weight: normal;
+              }
+            }
+            .left_side{
+              display: flex;
+              text-align: center;
+              justify-content: end;
+              align-items: center;
+              gap: 10px;
+              p{
+                font-size: 10px;
+                padding-top: 5px;
+              }
+              .one{
+                background-color: white;
+                padding: 0 15px;
+                border-radius: 5px;
+                .one_content{
+                  margin-top: 10px;
+                  .close{
+                    font-size: 28px;
+                    background-color: red;
+                    color:white;
+                    border-radius: 50%;
+                  }
+                }
+              }
+              .two{
+                background-color: white;
+                padding: 0 15px;
+                border-radius: 5px;
+                .two_content{
+                  margin-top: 10px;
+                  .tick{
+                    font-size: 28px;
+                    background-color: green;
+                    color:white;
+                    border-radius: 50%;
+                  }
+                }
+              }
+              .three{
+                background-color: white;
+                padding: 0 15px;
+                border-radius: 5px;
+                .three_content{
+                  margin-top: 10px;
+                  a{
+                    text-decoration: none;
+                    color: #000;
+                    .glass{
+                      font-size: 28px;
+                      color:white;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

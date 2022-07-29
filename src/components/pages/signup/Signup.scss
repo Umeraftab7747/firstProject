@@ -1,0 +1,264 @@
+.page_1{
+    display: flex;
+    @media screen and (max-width: 700px) {
+        flex-direction: column-reverse;
+      }
+    .login{
+      height: 100vh;
+      width: 55%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+      }
+      .login_content{
+        text-align: center;
+        width: 70%;
+        @media screen and (max-width: 968px) {
+            width: 80%;
+          }
+          @media screen and (max-width: 700px) {
+            width: 100%;
+          }
+        h1{
+          color: #3CCF4E;
+          font-size: 64px;
+          padding-bottom: 4rem;
+          @media screen and (max-width: 968px) {
+            font-size: 50px;
+          }
+        }
+        .inputs{
+          img{
+            width: 1.5%;
+            margin-left: 10px;
+          }
+          .icon{
+            position: absolute;
+            margin-top: 12px;
+            margin-left: 5px;
+          }
+          input{
+            width: 90%;
+            padding: 7px 0;
+            border: none;
+            background-color: #dfe6e9;
+            &::placeholder{
+              font-weight: bold;
+              font-size: 14px;
+              opacity: .8;
+              padding-left: 25px;
+              @media screen and (max-width: 968px) {
+                width: 100%;
+              }
+              @media screen and (max-width: 700px) {
+                width: 70%;
+              }
+              @media screen and (max-width: 440px) {
+                width: 80%;
+              }
+            }
+            &:focus{
+              outline: none;
+            }
+          }
+          label{
+            font-size: 13px;
+            color: #3CCF4E;
+            font-weight: 500;
+          }
+        }
+        .buttons{
+          padding-top: 6rem;
+          .login_btn{
+            padding-bottom: 2rem;
+            button{
+              border: none;
+              background: none;
+              background-color: #3CCF4E;
+              color: white;
+              padding: 10px 96px;
+              font-weight: 600;
+              font-size: 14px;
+              @media screen and (max-width: 910px) {
+                font-size: 11px;
+                padding: 9px 76px;
+              }
+              @media screen and (max-width: 700px) {
+                font-size: 14px;
+                padding: 10px 96px;
+              }
+              @media screen and (max-width: 440px) {
+                font-size: 11px;
+              }
+            }
+          }
+          .google_btn{
+            a{
+              text-decoration: none;
+              font-size: 14px;
+              background-color: #3B44F6;
+              color: white;
+              padding: 11px 29px;
+              font-weight: 600;
+              @media screen and (max-width: 910px) {
+                font-size: 11px;
+                padding: 9px 19px;
+              }
+              @media screen and (max-width: 700px) {
+                font-size: 14px;
+                padding: 11px 31px;
+              }
+              @media screen and (max-width: 440px) {
+                font-size: 11px;
+                padding: 11px 43px;
+              }
+              .g_icon{
+                font-size: 25px;    
+                margin-right: 10px;   
+                @media screen and (max-width: 910px) {
+                    font-size: 20px;
+                  }      
+              }
+            }
+          }
+        }
+      }
+    }
+    .hello{
+      background-color: azure;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: 100vh;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+      }
+      .image{
+        height: 100vh;
+        width: 100%;
+        &::after{
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 47.6%;
+          height: 100%;
+          background-color: #3CCF4E;
+          opacity: .4;
+          @media screen and (max-width: 700px) {
+            width: 100%;
+          }
+        }
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      .hello_content{
+        position: absolute;
+        text-align: center;
+        color: white;
+        .text_content{
+          padding-bottom: 7rem;
+          img{
+            width: 28%;
+            height: 22%;
+            position: absolute;
+            padding-bottom: 25px;
+            padding-right: 20px;
+          }
+        }
+        h1{
+          font-size: 64px;
+          @media screen and (max-width: 968px) {
+            font-size: 50px;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 40px;
+          }
+          @media screen and (max-width: 700px) {
+            font-size: 64px;
+          }
+          @media screen and (max-width: 440px) {
+            font-size: 35px;
+          }
+        }
+        h2{
+          font-size: 36px;
+          @media screen and (max-width: 968px) {
+            font-size: 30px;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 24px;
+          }
+          @media screen and (max-width: 700px) {
+            font-size: 36px;
+          }
+          @media screen and (max-width: 440px) {
+            font-size: 22px;
+          }
+        }
+      }
+      .buttons{
+        .login_btn{
+          padding-bottom: 2rem;
+          button{
+            border: none;
+            background: none;
+            background-color: white;
+            color: #3CCF4E;
+            padding: 10px 96px;
+            font-weight: 600;
+            font-size: 14px;
+            @media screen and (max-width: 910px) {
+                font-size: 11px;
+                padding: 9px 76px;
+                font-weight: 700;
+              }
+              @media screen and (max-width: 700px) {
+                font-size: 14px;
+                padding: 10px 96px;
+              }
+              @media screen and (max-width: 440px) {
+                font-size: 11px;
+              }
+          }
+        }
+        .google_btn{
+          a{
+            text-decoration: none;
+            font-size: 14px;
+            background-color: white;
+            color: #3B44F6;
+            padding: 11px 28px;
+            font-weight: 600;
+            @media screen and (max-width: 910px) {
+                font-size: 11px;
+                padding: 9px 23px;
+                font-weight: 700;
+              }
+              @media screen and (max-width: 700px) {
+                font-size: 14px;
+                padding: 11px 31px;
+              }
+              @media screen and (max-width: 440px) {
+                font-size: 11px;
+                padding: 11px 43px;
+              }
+            .g_icon{
+              font-size: 25px;    
+              margin-right: 10px;   
+              @media screen and (max-width: 910px) {
+                font-size: 20px;
+              }      
+            }
+          }
+        }
+      }
+    }
+  }
+  
